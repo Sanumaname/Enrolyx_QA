@@ -1,0 +1,55 @@
+# TC-017- Verify CSV Import with Valid File
+
+## Test Case Description
+
+Verify that a user can successfully import prospect records using a valid CSV file with all required columns and that imported records are created and displayed in the CRM prospect list.
+
+## Module
+
+CRM / Prospect Import
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application.
+* Prospects Import feature should be accessible.
+* Valid CSV file with required columns should be available.
+* Application should be available.
+
+## Test Data
+
+* CSV File: Valid_Prospects.csv
+* Required Columns:
+
+  * First Name
+  * Last Name
+  * Mobile Number
+  * Email
+  * Program of Interest
+  * Lead Source
+
+
+## Test Scenarios
+
+### TC-017-01: Import prospects using a valid CSV file
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to **Prospects > Import**.
+3. Upload a valid CSV file containing required columns.
+4. Review the import data preview (if available).
+5. Confirm the import.
+
+**Expected Result:**
+
+* CSV file should be uploaded successfully.
+* Import process should complete successfully.
+* Import summary should display the number of records created.
+* Imported prospect records should appear in the CRM prospect list.
+* Imported prospect details should match the CSV file data.
+
+**Status:** Not Executed
