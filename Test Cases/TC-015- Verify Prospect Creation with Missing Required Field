@@ -1,0 +1,50 @@
+# TC-015- Verify Prospect Creation with Missing Required Field
+
+## Test Case Description
+
+Verify that the application prevents creating a prospect when a required field is left blank and displays an appropriate validation error message.
+
+## Module
+
+CRM / Prospect Management
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application.
+* Add Prospect form should be accessible.
+* Application should be available.
+
+## Test Data
+
+* First Name: John
+* Last Name: Smith
+* Mobile Number: Blank
+* Email: [john.smith@example.com](mailto:john.smith@example.com)
+* Program of Interest: Bachelor of Computer Science
+* Lead Source: Website
+
+
+## Test Scenarios
+
+### TC-015-01: Create a prospect without entering Mobile Number
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to **Prospects > Add Prospect**.
+3. Enter valid prospect details.
+4. Leave the **Mobile Number** field blank.
+5. Click the **Save** button.
+
+**Expected Result:**
+
+* Prospect record should not be created.
+* Validation error message should be displayed on the **Mobile Number** field.
+* User should be prompted to enter the required mobile number.
+* No incomplete prospect record should be saved in the system.
+
+**Status:** Not Executed
