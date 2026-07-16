@@ -1,0 +1,51 @@
+# TC-011- Verify Intake Creation with Missing Required Field
+
+## Test Case Description
+
+Verify that the application prevents creating an intake when a required field is left blank and displays an appropriate validation error message.
+
+## Module
+
+Academic Setup / Intake Management
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application as a Super Admin.
+* Add Intake form should be accessible.
+* Application should be available.
+
+## Test Data
+
+* Intake Name: January 2026 Intake
+* Program: Bachelor of Computer Science
+* Start Date: Blank
+* End Date: 30/06/2026
+* Seat Capacity: 50
+* Status: Active
+
+
+## Test Scenarios
+
+### TC-011-01: Create an intake without entering Start Date
+
+**Steps:**
+
+1. Login to the application as a Super Admin.
+2. Navigate to **Settings > Academic Setup > Intakes**.
+3. Click the **Add Intake** button.
+4. Enter valid intake details.
+5. Leave the **Start Date** field blank.
+6. Click the **Save** button.
+
+**Expected Result:**
+
+* Intake should not be created.
+* Validation error message should be displayed on the **Start Date** field.
+* User should be prompted to enter the required Start Date.
+* No incomplete intake record should be saved in the system.
+
+**Status:** Not Executed
