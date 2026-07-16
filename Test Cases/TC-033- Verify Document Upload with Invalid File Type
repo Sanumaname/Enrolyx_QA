@@ -1,0 +1,48 @@
+# TC-033- Verify Document Upload with Invalid File Type
+
+## Test Case Description
+
+Verify that the application prevents users from uploading unsupported file types and displays an appropriate validation error message.
+
+## Module
+
+Applications / Document Management
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application.
+* Application should be in progress.
+* Document upload feature should be available.
+* Application should be available.
+
+## Test Data
+
+* Document File: Test_File.exe
+* Invalid File Type: .exe
+
+---
+
+## Test Scenarios
+
+### TC-033-01: Upload a document with invalid file type
+
+**Steps:**
+
+1. Login to the application.
+2. Open an application that is in progress.
+3. Click the **Upload Document** button.
+4. Select an invalid file type (.exe).
+5. Attempt to upload the file.
+
+**Expected Result:**
+
+* System should reject the invalid file type.
+* Error message **"Invalid file type"** should be displayed.
+* File should not be uploaded.
+* No invalid document record should be saved.
+
+**Status:** Not Executed
