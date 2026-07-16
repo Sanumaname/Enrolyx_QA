@@ -1,0 +1,53 @@
+# TC-016 - Verify Web Form Lead Automatically Creates Prospect
+
+## Test Case Description
+
+Verify that submitting the public web enquiry form automatically creates a prospect record in the CRM with the correct source tag and assigns the prospect to a counselor according to the configured assignment rule.
+
+## Module
+
+CRM / Lead Management
+
+## Priority
+
+High
+
+## Preconditions
+
+* Public web enquiry form should be configured and active.
+* CRM module should be available.
+* Counselor assignment rules should be configured.
+* Application should be available.
+
+## Test Data
+
+* First Name: John
+* Last Name: Smith
+* Mobile: 0771234567
+* Email: [john.smith@example.com](mailto:john.smith@example.com)
+* Program of Interest: Bachelor of Computer Science
+* Lead Source: Web Form
+
+
+## Test Scenarios
+
+### TC-016-01: Submit web enquiry form and verify prospect creation
+
+**Steps:**
+
+1. Open the public web enquiry form.
+2. Enter valid prospect details.
+3. Submit the enquiry form.
+4. Login to the CRM application.
+5. Navigate to the prospect list.
+6. Search for the newly submitted prospect record.
+
+**Expected Result:**
+
+* Prospect record should be automatically created in the CRM.
+* Prospect source should be displayed as **Web Form**.
+* Prospect should be automatically assigned to a counselor based on the assignment rule.
+* Prospect details should match the submitted web enquiry form data.
+* No duplicate prospect record should be created.
+
+**Status:** Not Executed
