@@ -1,0 +1,57 @@
+# TC-042- Verify Merge Variables Are Populated Correctly in Messages
+
+## Test Case Description
+
+Verify that merge variables used in communication templates are automatically replaced with the correct prospect information when previewing a message before sending.
+
+## Module
+
+Communication / Template Management
+
+## Priority
+
+Medium
+
+## Preconditions
+
+* User should be logged into the application.
+* Prospect profile should exist.
+* Communication template with merge variables should exist.
+* Prospect should have valid first name and program details.
+* Application should be available.
+
+## Test Data
+
+* Template: Application Information Template
+* Merge Variables:
+
+  * {{first_name}}
+  * {{program}}
+* Prospect Details:
+
+  * First Name: John
+  * Program: Bachelor of Computer Science
+
+---
+
+## Test Scenarios
+
+### TC-042-01: Verify merge variables are replaced with actual prospect data
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to the prospect profile.
+3. Click the **Send Message** button.
+4. Select a communication template containing merge variables.
+5. Preview the message before sending.
+6. Review the displayed message content.
+
+**Expected Result:**
+
+* Preview should display the prospect's actual first name instead of **{{first_name}}**.
+* Preview should display the prospect's actual program instead of **{{program}}**.
+* No merge variable placeholders should remain in the preview.
+* Message content should be generated correctly using prospect data.
+
+**Status:** Not Executed
