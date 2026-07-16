@@ -1,0 +1,62 @@
+# TC-041- Verify Communication Log Shows Full Message History
+
+## Test Case Description
+
+Verify that the communication history of a prospect displays all sent messages with complete details including communication channel, timestamp, template name, and delivery status.
+
+## Module
+
+Communication / Prospect Management
+
+## Priority
+
+Medium
+
+## Preconditions
+
+* User should be logged into the application.
+* Prospect profile should exist in the system.
+* Prospect should have multiple sent communications.
+* Communication records should be available.
+* Application should be available.
+
+## Test Data
+
+* Prospect: Existing Prospect Record
+* Communication History:
+
+  * Email messages
+  * WhatsApp messages
+* Communication Details:
+
+  * Channel
+  * Timestamp
+  * Template Name
+  * Delivery Status
+
+---
+
+## Test Scenarios
+
+### TC-041-01: Verify complete communication history on prospect profile
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to the prospect profile.
+3. Open the **Communications** tab.
+4. Review the displayed communication records.
+
+**Expected Result:**
+
+* All sent messages should be displayed in the communication history.
+* Each communication record should display:
+
+  * Communication channel (Email/WhatsApp)
+  * Sent timestamp
+  * Template name used
+  * Delivery status
+* Communication history should be displayed correctly and in proper order.
+* No communication records should be missing.
+
+**Status:** Not Executed
