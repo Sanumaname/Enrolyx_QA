@@ -1,0 +1,61 @@
+# TC-029- Verify Super Admin Can Create Application Form Using Form Builder
+
+## Test Case Description
+
+Verify that a Super Admin user can successfully create a new application form using the form builder, add required fields, link the form to a program, and save the form configuration.
+
+## Module
+
+Settings / Form Builder
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application as a Super Admin.
+* Program should already exist in the system.
+* Forms module should be accessible.
+* User should have permission to create forms.
+* Application should be available.
+
+## Test Data
+
+* Form Name: Student Application Form
+* Linked Program: Bachelor of Computer Science
+* Form Fields:
+
+  * Full Name (Text)
+  * Date of Birth (Date)
+  * Qualification (Dropdown)
+
+---
+
+## Test Scenarios
+
+### TC-029-01: Create an application form using Form Builder
+
+**Steps:**
+
+1. Login to the application as a Super Admin.
+2. Navigate to **Settings > Forms**.
+3. Click the **New Form** button.
+4. Enter a valid form name.
+5. Drag and add the following fields:
+
+   * Full Name (Text)
+   * Date of Birth (Date)
+   * Qualification (Dropdown)
+6. Link the form to an existing program.
+7. Click the **Save** button.
+
+**Expected Result:**
+
+* Application form should be created successfully.
+* Added fields should appear correctly in the form layout.
+* Form should be linked to the selected program.
+* Created form should appear in the form list.
+* Form details should be saved correctly.
+
+**Status:** Not Executed
