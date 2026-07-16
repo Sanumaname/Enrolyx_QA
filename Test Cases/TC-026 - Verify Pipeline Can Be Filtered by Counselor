@@ -1,0 +1,49 @@
+# TC-026 - Verify Pipeline Can Be Filtered by Counselor
+
+## Test Case Description
+
+Verify that users can filter the pipeline by a specific counselor and only prospects assigned to the selected counselor are displayed.
+
+## Module
+
+CRM / Pipeline Management
+
+## Priority
+
+Medium
+
+## Preconditions
+
+* User should be logged into the application.
+* Multiple counselors should exist in the system.
+* Prospects should be assigned to different counselors.
+* Pipeline view should be accessible.
+* Application should be available.
+
+## Test Data
+
+* Filter: Counselor
+* Selected Counselor: Counselor 1
+
+---
+
+## Test Scenarios
+
+### TC-026-01: Filter pipeline by counselor
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to **Prospects > Pipeline View**.
+3. Open the **Counselor** filter.
+4. Select a specific counselor.
+5. Review the displayed prospect cards.
+
+**Expected Result:**
+
+* Only prospects assigned to the selected counselor should be displayed.
+* Prospects assigned to other counselors should not be visible.
+* Pipeline stage columns should remain unchanged.
+* Filter should be applied successfully without errors.
+
+**Status:** Not Executed
