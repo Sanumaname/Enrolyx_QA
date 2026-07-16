@@ -1,0 +1,50 @@
+# TC-022- Verify Custom Field Appears on Prospect Profile
+
+## Test Case Description
+
+Verify that a custom field created by an Admin is displayed on the prospect profile form and allows users to enter and save values successfully.
+
+## Module
+
+CRM / Prospect Management / Custom Fields
+
+## Priority
+
+Medium
+
+## Preconditions
+
+* User should be logged into the application.
+* Admin should have created a custom field named **Nationality** with field type **Text**.
+* Prospect record should already exist.
+* Prospect profile should be accessible.
+* Application should be available.
+
+## Test Data
+
+* Custom Field Name: Nationality
+* Field Type: Text
+* Field Value: Sri Lankan
+
+
+## Test Scenarios
+
+### TC-022-01: Verify custom field visibility and data saving on prospect profile
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to the prospect list.
+3. Open any existing prospect profile.
+4. Verify the **Nationality** custom field is displayed on the profile form.
+5. Enter a value in the **Nationality** field.
+6. Click the **Save** button.
+
+**Expected Result:**
+
+* **Nationality** field should be visible on the prospect profile form.
+* User should be able to enter a value in the field.
+* Entered value should be saved successfully.
+* Saved value should be displayed correctly on the prospect profile.
+
+**Status:** Not Executed
