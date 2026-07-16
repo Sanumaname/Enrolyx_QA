@@ -23,8 +23,6 @@ High
 * Non-Existent Email: [unknownuser@example.com](mailto:unknownuser@example.com)
 * Password: Test@123
 
----
-
 ## Test Scenarios
 
 ### TC-003-01: Login with non-existent email
