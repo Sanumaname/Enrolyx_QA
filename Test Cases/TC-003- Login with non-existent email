@@ -1,0 +1,46 @@
+# TC-003: Verify Login with Non-Existent Email
+
+## Test Case Description
+
+Verify that the application does not allow a user to log in using an email address that is not registered in the system and displays an appropriate error message.
+
+## Module
+
+Login
+
+## Priority
+
+High
+
+## Preconditions
+
+* Login page should be accessible.
+* Application should be available.
+* User should have a valid registered account for comparison.
+
+## Test Data
+
+* Non-Existent Email: [unknownuser@example.com](mailto:unknownuser@example.com)
+* Password: Test@123
+
+---
+
+## Test Scenarios
+
+### TC-003-01: Login with non-existent email
+
+**Steps:**
+
+1. Open the application login page.
+2. Enter an email address that is not registered in the system.
+3. Enter a valid password format.
+4. Click the **Login** button.
+
+**Expected Result:**
+
+* User should not be logged into the application.
+* An appropriate error message (e.g., "Invalid email or password" or "User not found") should be displayed.
+* User should remain on the login page.
+* No user session should be created.
+
+**Status:** Not Executed
