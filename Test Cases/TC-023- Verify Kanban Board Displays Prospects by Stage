@@ -1,0 +1,54 @@
+# TC-023- Verify Kanban Board Displays Prospects by Stage
+
+## Test Case Description
+
+Verify that the Kanban board displays prospect records in their respective pipeline stages with one column for each configured stage.
+
+## Module
+
+CRM / Pipeline Management
+
+## Priority
+
+Medium
+
+## Preconditions
+
+* User should be logged into the application.
+* Multiple prospects should exist across different pipeline stages.
+* Pipeline view should be accessible.
+* Application should be available.
+
+## Test Data
+
+* Pipeline Stages:
+
+  * Enquiry
+  * Contacted
+  * Applied
+  * Offer
+  * Enrolled
+* Prospect Records: Existing prospects assigned to different stages
+
+
+## Test Scenarios
+
+### TC-023-01: Verify prospects are displayed in the correct Kanban stage
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to **Prospects > Pipeline View**.
+3. Review the Kanban board.
+4. Verify the stage columns.
+5. Verify the prospect cards displayed under each stage.
+
+**Expected Result:**
+
+* Kanban board should display one column for each configured pipeline stage.
+* Prospect cards should appear under their respective stages.
+* Each prospect should be displayed in the correct stage.
+* No prospect should appear in an incorrect stage.
+* Kanban board should load without errors.
+
+**Status:** Not Executed
