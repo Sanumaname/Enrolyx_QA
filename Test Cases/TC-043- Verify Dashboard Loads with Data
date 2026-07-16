@@ -1,0 +1,54 @@
+# TC-043- Verify Dashboard Loads with Data
+
+## Test Case Description
+
+Verify that the dashboard loads successfully within the expected time and displays accurate summary information including total leads, conversion rate, active applications, and counselor performance data.
+
+## Module
+
+Dashboard / Analytics
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application.
+* Prospects, applications, and interactions should exist in the system.
+* Dashboard module should be accessible.
+* Application should be available.
+
+## Test Data
+
+* Dashboard Metrics:
+
+  * Total Leads
+  * Conversion Rate
+  * Active Applications
+  * Counselor Performance
+
+---
+
+## Test Scenarios
+
+### TC-043-01: Verify dashboard displays available data
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to the **Dashboard**.
+3. Observe the page loading time.
+4. Review the displayed dashboard statistics and performance data.
+
+**Expected Result:**
+
+* Dashboard should load successfully within 3 seconds.
+* Stat cards should be displayed correctly.
+* **Total Leads** count should be visible.
+* **Conversion Rate** should be displayed.
+* **Active Applications** count should be visible.
+* **Counselor Performance** data should be displayed.
+* Dashboard data should load without errors.
+
+**Status:** Not Executed
