@@ -1,0 +1,59 @@
+# TC-045- Verify Program Filter Updates Dashboard Metrics
+
+## Test Case Description
+
+Verify that selecting a specific program from the dashboard filter updates all displayed metrics to show only the data related to the selected program.
+
+## Module
+
+Dashboard / Analytics
+
+## Priority
+
+Medium
+
+## Preconditions
+
+* User should be logged into the application.
+* Dashboard should be loaded successfully.
+* Multiple programs should exist in the system.
+* Prospects and application data should be available for different programs.
+* Program filter should be available.
+* Application should be available.
+
+## Test Data
+
+* Filter: Program
+* Selected Program: Bachelor of Computer Science
+* Dashboard Metrics:
+
+  * Total Leads
+  * Conversion Rate
+  * Active Applications
+  * Counselor Performance
+
+---
+
+## Test Scenarios
+
+### TC-045-01: Verify dashboard metrics update based on selected program
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to the **Dashboard**.
+3. Open the **Program** filter dropdown.
+4. Select a specific program.
+5. Review the displayed dashboard metrics.
+
+**Expected Result:**
+
+* Dashboard metrics should update based on the selected program.
+* Only data related to the selected program should be displayed.
+* Total Leads should reflect prospects from the selected program only.
+* Conversion Rate should reflect the selected program data.
+* Active Applications should display records related to the selected program.
+* Counselor Performance metrics should update according to the selected program.
+* No errors should occur when applying the filter.
+
+**Status:** Not Executed
