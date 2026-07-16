@@ -1,0 +1,56 @@
+# TC-049- Verify Enrollment Counselor Cannot Access Settings Modules
+
+## Test Case Description
+
+Verify that an Enrollment Counselor user does not have permission to access restricted Settings modules and receives an Access Denied error when attempting to navigate to unauthorized pages.
+
+## Module
+
+Role-Based Access Control (RBAC) / Settings
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application as an Enrollment Counselor.
+* Enrollment Counselor role should not have access to Settings modules.
+* Settings pages should exist.
+* Application should be available.
+
+## Test Data
+
+* User Role: Enrollment Counselor
+* Restricted Pages:
+
+  * /settings/users
+  * /settings/academic
+  * /settings/forms
+
+---
+
+## Test Scenarios
+
+### TC-049-01: Verify Enrollment Counselor access restriction for Settings pages
+
+**Steps:**
+
+1. Login to the application as an Enrollment Counselor.
+2. Attempt to navigate to **/settings/users**.
+3. Attempt to navigate to **/settings/academic**.
+4. Attempt to navigate to **/settings/forms**.
+5. Observe the system response.
+
+**Expected Result:**
+
+* Access to all restricted Settings pages should be denied.
+* System should display **403 Access Denied** for:
+
+  * Users Settings page.
+  * Academic Settings page.
+  * Forms Settings page.
+* Enrollment Counselor should not be able to view or modify restricted settings.
+* No unauthorized data should be accessible.
+
+**Status:** Not Executed
