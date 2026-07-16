@@ -1,0 +1,61 @@
+# TC-047- Verify Counselor Performance Table on Dashboard
+
+## Test Case Description
+
+Verify that the counselor performance table on the dashboard displays accurate performance details for each counselor, including assigned leads, logged interactions, submitted applications, and conversion rate.
+
+## Module
+
+Dashboard / Analytics
+
+## Priority
+
+Medium
+
+## Preconditions
+
+* User should be logged into the application.
+* Dashboard should be accessible.
+* Counselors should exist in the system.
+* Prospects should be assigned to counselors.
+* Interactions should be logged.
+* Applications should exist.
+* Application should be available.
+
+## Test Data
+
+* Counselor Records: Existing Counselors
+* Performance Metrics:
+
+  * Leads Assigned
+  * Interactions Logged
+  * Applications Submitted
+  * Conversion Rate
+
+---
+
+## Test Scenarios
+
+### TC-047-01: Verify counselor performance table displays correct data
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to the **Dashboard**.
+3. Locate the **Counselor Performance** table.
+4. Review the displayed counselor records and metrics.
+
+**Expected Result:**
+
+* Counselor performance table should be displayed successfully.
+* Each counselor should be listed in the table.
+* The table should display:
+
+  * Number of leads assigned to each counselor.
+  * Number of interactions logged by each counselor.
+  * Number of applications submitted by each counselor.
+  * Conversion rate for each counselor.
+* Displayed metrics should match the available system data.
+* No errors should occur while loading the performance table.
+
+**Status:** Not Executed
