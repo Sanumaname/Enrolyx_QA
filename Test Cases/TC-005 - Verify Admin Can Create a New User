@@ -1,0 +1,50 @@
+# TC-005: Verify Admin Can Create a New User
+
+## Test Case Description
+
+Verify that a Super Admin user can successfully create a new user by entering valid user details and assigning the appropriate role.
+
+## Module
+
+User Management
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application as a Super Admin.
+* User Management module should be accessible.
+* Application should be available.
+
+## Test Data
+
+* User Name: New Test User
+* Email: [newuser@example.com](mailto:newuser@example.com)
+* Role: Enrollment Counselor
+
+
+## Test Scenarios
+
+### TC-005-01: Create a new user as Super Admin
+
+**Steps:**
+
+1. Login to the application as a Super Admin.
+2. Navigate to **Settings > Users**.
+3. Click the **Add User** button.
+4. Enter a valid user name.
+5. Enter a valid email address.
+6. Select the role **Enrollment Counselor**.
+7. Click the **Save** button.
+
+**Expected Result:**
+
+* New user should be created successfully.
+* The newly created user should appear in the user list.
+* User details should be displayed correctly.
+* Assigned role should be displayed as **Enrollment Counselor**.
+* A success message should be displayed after user creation.
+
+**Status:** Not Executed
