@@ -1,0 +1,48 @@
+# TC-018 - Verify CSV Import with Missing Required Column
+
+## Test Case Description
+
+Verify that the application prevents importing prospect records when the uploaded CSV file is missing a required column and displays an appropriate validation error message.
+
+## Module
+
+CRM / Prospect Import
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application.
+* Prospects Import feature should be accessible.
+* Invalid CSV file with a missing required column should be available.
+* Application should be available.
+
+## Test Data
+
+* CSV File: Invalid_Prospects_Missing_Email.csv
+* Missing Required Column:
+
+  * Email
+
+
+## Test Scenarios
+
+### TC-018-01: Import prospects using CSV file with missing required column
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to **Prospects > Import**.
+3. Upload an invalid CSV file without the required **Email** column.
+4. Confirm the import process.
+
+**Expected Result:**
+
+* System should validate the uploaded CSV file.
+* Error message should be displayed indicating the missing required column.
+* Import process should not proceed.
+* No prospect records should be imported into the system.
+
+**Status:** Not Executed
