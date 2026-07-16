@@ -1,0 +1,53 @@
+# TC-032- Verify User Can Upload a Valid Document
+
+## Test Case Description
+
+Verify that a user can successfully upload a valid document during the application process and the uploaded file details are visible to the counselor.
+
+## Module
+
+Applications / Document Management
+
+## Priority
+
+Medium
+
+## Preconditions
+
+* User should be logged into the application.
+* Application should be in progress.
+* Document upload feature should be available.
+* Valid PDF document under the allowed size limit should be available.
+* Application should be available.
+
+## Test Data
+
+* Document Type: Supporting Document
+* File Format: PDF
+* File Size: Less than 5MB
+* File Name: Supporting_Document.pdf
+
+---
+
+## Test Scenarios
+
+### TC-032-01: Upload a valid document in application form
+
+**Steps:**
+
+1. Login to the application.
+2. Open an application that is in progress.
+3. Click the **Upload Document** button.
+4. Select a valid PDF file under 5MB.
+5. Upload the document.
+6. Save the application.
+
+**Expected Result:**
+
+* Document should be uploaded successfully.
+* Uploaded file name should be displayed.
+* Document upload status should be visible.
+* Counselor should be able to view the uploaded document details.
+* No error should occur during upload.
+
+**Status:** Not Executed
