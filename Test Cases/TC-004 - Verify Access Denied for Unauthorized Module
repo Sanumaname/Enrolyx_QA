@@ -1,0 +1,49 @@
+# TC-004: Verify Access Denied for Unauthorized Module
+
+## Test Case Description
+
+Verify that a user without the required permissions cannot access an unauthorized module and the system displays an appropriate access denied message.
+
+## Module
+
+Authorization / Access Control
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should have a registered account.
+* User should be logged into the application.
+* User should not have permission to access the restricted module.
+* Application should be available.
+
+## Test Data
+
+* Username: [testuser@example.com](mailto:testuser@example.com)
+* Password: Test@123
+* Restricted Module: Admin Module / Unauthorized Module
+
+---
+
+## Test Scenarios
+
+### TC-004-01: Access restricted module without required permission
+
+**Steps:**
+
+1. Open the application login page.
+2. Enter valid username/email and password.
+3. Click the **Login** button.
+4. Navigate to the restricted/unauthorized module.
+5. Attempt to access the module.
+
+**Expected Result:**
+
+* User should be denied access to the unauthorized module.
+* An appropriate error message (e.g., "Access Denied", "You do not have permission to access this module") should be displayed.
+* Restricted module data or functionality should not be visible.
+* User should remain on the current page or be redirected to an authorized page.
+
+**Status:** Not Executed
