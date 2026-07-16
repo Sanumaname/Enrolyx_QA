@@ -1,0 +1,51 @@
+# TC-021- Verify User Can Log an Interaction for a Prospect
+
+## Test Case Description
+
+Verify that a user can successfully add an interaction to a prospect profile and the interaction details are displayed correctly in the prospect timeline with timestamp, interaction type, and notes.
+
+## Module
+
+CRM / Prospect Management
+
+## Priority
+
+Medium
+
+## Preconditions
+
+* User should be logged into the application.
+* Prospect profile should already exist.
+* Prospect profile should be open.
+* User should have permission to add interactions.
+* Application should be available.
+
+## Test Data
+
+* Interaction Type: Call
+* Notes: Follow-up call completed with prospect.
+
+
+## Test Scenarios
+
+### TC-021-01: Add a Call interaction to prospect profile
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to the prospect profile.
+3. Click the **Add Interaction** button.
+4. Select interaction type as **Call**.
+5. Enter interaction notes.
+6. Click the **Save** button.
+
+**Expected Result:**
+
+* Interaction should be saved successfully.
+* Newly added interaction should appear in the prospect timeline.
+* Interaction timestamp should be displayed.
+* Interaction type should be displayed as **Call**.
+* Entered notes should be displayed correctly.
+* Prospect interaction history should be updated.
+
+**Status:** Not Executed
