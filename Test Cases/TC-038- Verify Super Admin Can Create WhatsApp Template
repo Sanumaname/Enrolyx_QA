@@ -1,0 +1,51 @@
+# TC-038- Verify Super Admin Can Create WhatsApp Template
+
+## Test Case Description
+
+Verify that a user can successfully create a WhatsApp template with the required message content and merge variable, and the created template is saved with the correct communication channel.
+
+## Module
+
+Settings / Templates
+
+## Priority
+
+Medium
+
+## Preconditions
+
+* User should be logged into the application.
+* Templates module should be accessible.
+* User should have permission to create templates.
+* Application should be available.
+
+## Test Data
+
+* Template Name: Program Information WhatsApp Template
+* Channel: WhatsApp
+* Message Body: Hello {{program}} applicant, your application details are updated.
+
+---
+
+## Test Scenarios
+
+### TC-038-01: Create a WhatsApp template
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to **Settings > Templates**.
+3. Click the **New Template** button.
+4. Select the channel as **WhatsApp**.
+5. Enter the message body with merge variable **{{program}}**.
+6. Click the **Save** button.
+
+**Expected Result:**
+
+* WhatsApp template should be created successfully.
+* Template should appear in the template list.
+* Template channel should be displayed as **WhatsApp**.
+* Message body content should be saved correctly.
+* Merge variable **{{program}}** should be stored correctly.
+
+**Status:** Not Executed
