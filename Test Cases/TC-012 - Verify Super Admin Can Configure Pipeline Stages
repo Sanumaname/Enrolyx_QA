@@ -1,0 +1,58 @@
+# TC-012 - Verify Super Admin Can Configure Pipeline Stages
+
+## Test Case Description
+
+Verify that a Super Admin user can successfully add, reorder, and save pipeline stages, and the updated stage configuration is reflected correctly in the Kanban board.
+
+## Module
+
+Settings / Pipeline Management
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application as a Super Admin.
+* Pipeline Stages configuration page should be accessible.
+* User should have permission to manage pipeline stages.
+* Application should be available.
+
+## Test Data
+
+* Pipeline Stages:
+
+  * Enquiry
+  * Contacted
+  * Applied
+  * Offer
+  * Enrolled
+
+
+## Test Scenarios
+
+### TC-012-01: Configure and reorder pipeline stages as Super Admin
+
+**Steps:**
+
+1. Login to the application as a Super Admin.
+2. Navigate to **Settings > Pipeline Stages**.
+3. Add the following pipeline stages:
+
+   * Enquiry
+   * Contacted
+   * Applied
+   * Offer
+   * Enrolled
+4. Drag and reorder the stages as required.
+5. Click the **Save** button.
+
+**Expected Result:**
+
+* New pipeline stages should be added successfully.
+* Pipeline stages should be saved in the configured order.
+* Updated stage order should be reflected in the Kanban board.
+* No error should occur while saving the configuration.
+
+**Status:** Not Executed
