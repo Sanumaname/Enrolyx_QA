@@ -1,0 +1,61 @@
+# TC-040- Verify User Can Send WhatsApp Message to Prospect
+
+## Test Case Description
+
+Verify that a user can successfully send a WhatsApp message to a prospect using an existing WhatsApp template and that the communication is logged correctly in the prospect timeline.
+
+## Module
+
+Communication / Prospect Management
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application.
+* WhatsApp template should already exist.
+* Prospect profile should exist.
+* Prospect should have a valid WhatsApp contact number.
+* WhatsApp API integration should be configured and active.
+* User should have permission to send messages.
+* Application should be available.
+
+## Test Data
+
+* Communication Channel: WhatsApp
+* WhatsApp Template: Program Information WhatsApp Template
+* Prospect WhatsApp Number: Valid WhatsApp Contact Number
+* Merge Variable: {{program}}
+
+---
+
+## Test Scenarios
+
+### TC-040-01: Send WhatsApp message to prospect using template
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to the prospect profile.
+3. Click the **Send Message** button.
+4. Select communication channel as **WhatsApp**.
+5. Select an existing WhatsApp template.
+6. Preview the merged message content.
+7. Confirm and send the message.
+
+**Expected Result:**
+
+* WhatsApp message should be sent successfully to the prospect.
+* Merge variables should be replaced with the correct prospect information.
+* Communication should be logged in the prospect timeline.
+* Timeline entry should display:
+
+  * Communication channel as **WhatsApp**
+  * Timestamp
+  * Template name
+  * Message status as **Sent**
+* No error should occur during message sending.
+
+**Status:** Not Executed
