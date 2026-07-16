@@ -1,0 +1,51 @@
+# TC-031- Verify Application Submission with Missing Required Fields
+
+## Test Case Description
+
+Verify that the application form prevents submission when required fields are left blank and displays appropriate validation messages for the missing fields.
+
+## Module
+
+Applications / Application Management
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application.
+* Application form with required fields should exist.
+* Prospect profile should be available.
+* Application module should be accessible.
+* Application should be available.
+
+## Test Data
+
+* Application Form: Existing Application Form
+* Missing Field: Required Field (e.g., Full Name)
+* Program: Bachelor of Computer Science
+* Intake: January 2026 Intake
+
+---
+
+## Test Scenarios
+
+### TC-031-01: Submit application without entering required field values
+
+**Steps:**
+
+1. Login to the application.
+2. Open the application form.
+3. Enter valid data in available fields.
+4. Leave a required field blank.
+5. Click the **Submit** button.
+
+**Expected Result:**
+
+* Application should not be submitted.
+* Validation error message should be displayed for the blank required field.
+* User should be prompted to complete the required field.
+* No incomplete application record should be created.
+
+**Status:** Not Executed
