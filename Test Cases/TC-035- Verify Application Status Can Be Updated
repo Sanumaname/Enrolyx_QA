@@ -1,0 +1,53 @@
+# TC-035- Verify Application Status Can Be Updated
+
+## Test Case Description
+
+Verify that a user can successfully update the application status from Submitted to Under Review, add reviewer notes, and the status change is recorded with user and timestamp details.
+
+## Module
+
+Applications / Application Management
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application.
+* Application with status **Submitted** should exist.
+* User should have permission to update application status.
+* Application module should be accessible.
+* Application should be available.
+
+## Test Data
+
+* Current Status: Submitted
+* New Status: Under Review
+* Reviewer Notes: Application reviewed and moved for further evaluation.
+
+---
+
+## Test Scenarios
+
+### TC-035-01: Update application status to Under Review
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to the application list.
+3. Open an application with status **Submitted**.
+4. Change the application status to **Under Review**.
+5. Enter reviewer notes.
+6. Click the **Save** button.
+
+**Expected Result:**
+
+* Application status should be updated successfully to **Under Review**.
+* Reviewer notes should be saved successfully.
+* Status change should be logged in the application history.
+* Log should display the user who performed the update.
+* Timestamp of the status change should be recorded.
+* Updated application details should be displayed correctly.
+
+**Status:** Not Executed
