@@ -1,0 +1,52 @@
+# TC-036- Verify Email Notification is Sent on Application Status Change
+
+## Test Case Description
+
+Verify that the system sends an email notification to the prospect when the application status is changed from Under Review to Approved.
+
+## Module
+
+Applications / Notification Management
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application.
+* Application record should exist with status **Under Review**.
+* Prospect should have a valid email address.
+* Email notification service should be configured and active.
+* User should have permission to update application status.
+* Application should be available.
+
+## Test Data
+
+* Current Status: Under Review
+* New Status: Approved
+* Prospect Email: [john.smith@example.com](mailto:john.smith@example.com)
+
+---
+
+## Test Scenarios
+
+### TC-036-01: Verify email notification after application status change
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to the application list.
+3. Open an application with status **Under Review**.
+4. Change the application status to **Approved**.
+5. Save the status update.
+6. Check the prospect email inbox.
+
+**Expected Result:**
+
+* Application status should be updated successfully to **Approved**.
+* Email notification should be sent to the prospect's registered email address.
+* Email should contain the updated application status information.
+* Notification sending activity should be recorded in the system (if applicable).
+
+**Status:** Not Executed
