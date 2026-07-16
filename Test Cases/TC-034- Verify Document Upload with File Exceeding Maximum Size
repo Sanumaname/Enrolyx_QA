@@ -1,0 +1,50 @@
+# TC-034- Verify Document Upload with File Exceeding Maximum Size
+
+## Test Case Description
+
+Verify that the application prevents users from uploading documents that exceed the maximum allowed file size and displays an appropriate validation error message.
+
+## Module
+
+Applications / Document Management
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application.
+* Application should be in progress.
+* Document upload feature should be available.
+* Application should be available.
+
+## Test Data
+
+* Document File: Large_Document.pdf
+* File Format: PDF
+* File Size: More than 5MB
+
+---
+
+## Test Scenarios
+
+### TC-034-01: Upload a document exceeding 5MB size limit
+
+**Steps:**
+
+1. Login to the application.
+2. Open an application that is in progress.
+3. Click the **Upload Document** button.
+4. Select a PDF file larger than 5MB.
+5. Attempt to upload the file.
+
+**Expected Result:**
+
+* System should validate the document file size.
+* Error message **"File exceeds maximum size of 5MB."** should be displayed.
+* File upload should be rejected.
+* Document should not be saved in the application.
+* Existing application documents should remain unchanged.
+
+**Status:** Not Executed
