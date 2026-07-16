@@ -1,0 +1,58 @@
+# TC-020- Verify User Can View Prospect Profile
+
+## Test Case Description
+
+Verify that a user can successfully open and view a prospect profile containing all relevant prospect information including personal details, program interest, lead source, assigned counselor, current stage, and interaction timeline.
+
+## Module
+
+CRM / Prospect Management
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application.
+* Prospect record should already exist in the system.
+* Prospects module should be accessible.
+* Application should be available.
+
+## Test Data
+
+* Prospect: Existing Prospect Record
+* Prospect Details:
+
+  * Personal Details
+  * Program Interest
+  * Lead Source
+  * Assigned Counselor
+  * Current Stage
+  * Interaction Timeline
+
+
+## Test Scenarios
+
+### TC-020-01: View prospect profile details
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to the **Prospects** list.
+3. Select an existing prospect record.
+4. Click on the prospect to open the profile page.
+5. Review the displayed prospect information.
+
+**Expected Result:**
+
+* Prospect profile should open successfully.
+* Personal details should be displayed correctly.
+* Program of interest should be displayed.
+* Lead source should be visible.
+* Assigned counselor details should be displayed.
+* Current prospect stage should be displayed.
+* Interaction timeline/history should be visible.
+* All displayed information should match the prospect record.
+
+**Status:** Not Executed
