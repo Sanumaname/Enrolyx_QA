@@ -1,0 +1,59 @@
+# TC-046- Verify Intake Filter Updates Dashboard Metrics
+
+## Test Case Description
+
+Verify that selecting a specific intake from the dashboard filter updates all displayed metrics to show only the data related to the selected intake.
+
+## Module
+
+Dashboard / Analytics
+
+## Priority
+
+Medium
+
+## Preconditions
+
+* User should be logged into the application.
+* Dashboard should be loaded successfully.
+* Multiple intakes should exist in the system.
+* Prospects and application data should be available for different intakes.
+* Intake filter should be available.
+* Application should be available.
+
+## Test Data
+
+* Filter: Intake
+* Selected Intake: January 2026 Intake
+* Dashboard Metrics:
+
+  * Total Leads
+  * Conversion Rate
+  * Active Applications
+  * Counselor Performance
+
+---
+
+## Test Scenarios
+
+### TC-046-01: Verify dashboard metrics update based on selected intake
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to the **Dashboard**.
+3. Open the **Intake** filter dropdown.
+4. Select a specific intake.
+5. Review the displayed dashboard metrics.
+
+**Expected Result:**
+
+* Dashboard metrics should update based on the selected intake.
+* Only data related to the selected intake should be displayed.
+* Total Leads should reflect prospects from the selected intake only.
+* Conversion Rate should reflect the selected intake data.
+* Active Applications should display records related to the selected intake.
+* Counselor Performance metrics should update according to the selected intake.
+* No errors should occur when applying the filter.
+
+**Status:** Not Executed
