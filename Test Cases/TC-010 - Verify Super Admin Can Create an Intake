@@ -1,0 +1,58 @@
+# TC-010 - Verify Super Admin Can Create an Intake
+
+## Test Case Description
+
+Verify that a Super Admin user can successfully create a new intake by entering valid intake details and the created intake is displayed in the intake list and available in relevant intake dropdowns.
+
+## Module
+
+Academic Setup / Intake Management
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application as a Super Admin.
+* Program should already exist in the system.
+* Academic Setup module should be accessible.
+* User should have permission to create intakes.
+* Application should be available.
+
+## Test Data
+
+* Intake Name: January 2026 Intake
+* Program: Bachelor of Computer Science
+* Start Date: 01/01/2026
+* End Date: 30/06/2026
+* Seat Capacity: 50
+* Status: Active
+
+
+## Test Scenarios
+
+### TC-010-01: Create a new intake as Super Admin
+
+**Steps:**
+
+1. Login to the application as a Super Admin.
+2. Navigate to **Settings > Academic Setup > Intakes**.
+3. Click the **Add Intake** button.
+4. Enter a valid intake name.
+5. Select the relevant program.
+6. Set the intake start date.
+7. Set the intake end date.
+8. Enter the seat capacity.
+9. Set the status as **Active**.
+10. Click the **Save** button.
+
+**Expected Result:**
+
+* Intake should be created successfully.
+* Newly created intake should appear in the intake list.
+* Created intake should be available in all relevant intake dropdown fields.
+* Intake details should be displayed correctly.
+* A success message should be displayed after intake creation.
+
+**Status:** Not Executed
