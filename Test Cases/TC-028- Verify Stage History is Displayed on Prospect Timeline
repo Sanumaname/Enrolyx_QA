@@ -1,0 +1,56 @@
+# TC-028- Verify Stage History is Displayed on Prospect Timeline
+
+## Test Case Description
+
+Verify that all previous prospect stage changes are recorded and displayed in the prospect timeline with details including from-stage, to-stage, timestamp, and the user who performed the change.
+
+## Module
+
+CRM / Pipeline Management
+
+## Priority
+
+Medium
+
+## Preconditions
+
+* User should be logged into the application.
+* Prospect record should exist in the system.
+* Prospect should have been moved through multiple pipeline stages.
+* Prospect profile should be accessible.
+* Application should be available.
+
+## Test Data
+
+* Prospect: Existing Prospect Record
+* Stage History:
+
+  * From Stage: Enquiry
+  * To Stage: Contacted
+  * From Stage: Contacted
+  * To Stage: Applied
+
+---
+
+## Test Scenarios
+
+### TC-028-01: Verify prospect stage change history on timeline
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to the prospect list.
+3. Open a prospect profile that has been moved through multiple stages.
+4. Navigate to the interaction timeline/history section.
+5. Review the recorded stage changes.
+
+**Expected Result:**
+
+* Timeline should display all previous stage changes.
+* Each stage change record should show the previous stage (**From Stage**).
+* Each stage change record should show the new stage (**To Stage**).
+* Timestamp of each stage change should be displayed.
+* The user who performed the stage change should be displayed.
+* Stage history should be accurate and ordered correctly.
+
+**Status:** Not Executed
