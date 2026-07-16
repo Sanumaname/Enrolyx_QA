@@ -1,0 +1,59 @@
+# TC-044- Verify Date Range Filter Updates Dashboard Metrics
+
+## Test Case Description
+
+Verify that changing the dashboard date range filter updates all displayed metrics according to the selected date range.
+
+## Module
+
+Dashboard / Analytics
+
+## Priority
+
+Medium
+
+## Preconditions
+
+* User should be logged into the application.
+* Dashboard should be loaded successfully.
+* Data should exist for different date ranges.
+* Date range filter should be available.
+* Application should be available.
+
+## Test Data
+
+* Date Range Options:
+
+  * Last 30 Days
+  * Last 7 Days
+* Dashboard Metrics:
+
+  * Total Leads
+  * Conversion Rate
+  * Active Applications
+  * Counselor Performance
+
+---
+
+## Test Scenarios
+
+### TC-044-01: Verify dashboard metrics update based on selected date range
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to the **Dashboard**.
+3. Select the date range as **Last 30 Days**.
+4. Note the displayed dashboard metrics.
+5. Change the date range to **Last 7 Days**.
+6. Review the updated dashboard metrics.
+
+**Expected Result:**
+
+* Dashboard metrics should update based on the selected date range.
+* Data displayed for **Last 30 Days** should reflect only records within that period.
+* Data displayed for **Last 7 Days** should reflect only records within that period.
+* All relevant metrics should refresh correctly.
+* No errors should occur when changing date ranges.
+
+**Status:** Not Executed
