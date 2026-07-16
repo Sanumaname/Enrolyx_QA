@@ -1,0 +1,61 @@
+# TC-019 - Verify Auto Lead Assignment Using Round-Robin Rule
+
+## Test Case Description
+
+Verify that newly created prospects are automatically assigned to available counselors according to the configured round-robin assignment rule.
+
+## Module
+
+CRM / Lead Assignment
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application.
+* Three active counselors should exist in the system.
+* Round-robin assignment rule should be configured and active.
+* Prospects module should be accessible.
+* Application should be available.
+
+## Test Data
+
+* Counselors:
+
+  * Counselor 1
+  * Counselor 2
+  * Counselor 3
+* Prospect Records:
+
+  * Prospect 1
+  * Prospect 2
+  * Prospect 3
+
+
+## Test Scenarios
+
+### TC-019-01: Verify round-robin assignment of prospects to counselors
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to **Prospects > Add Prospect**.
+3. Create the first prospect with valid details.
+4. Save the prospect record.
+5. Create the second prospect with valid details.
+6. Save the prospect record.
+7. Create the third prospect with valid details.
+8. Save the prospect record.
+9. Check the assigned counselor for each prospect.
+
+**Expected Result:**
+
+* First prospect should be assigned to **Counselor 1**.
+* Second prospect should be assigned to **Counselor 2**.
+* Third prospect should be assigned to **Counselor 3**.
+* Prospects should be assigned according to the configured round-robin order.
+* Assignment should happen automatically without manual intervention.
+
+**Status:** Not Executed
