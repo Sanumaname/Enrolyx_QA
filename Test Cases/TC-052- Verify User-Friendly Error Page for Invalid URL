@@ -1,0 +1,46 @@
+# TC-052- Verify User-Friendly Error Page for Invalid URL
+
+## Test Case Description
+
+Verify that the application displays a user-friendly 404 error page when a user navigates to a non-existent URL route and does not expose any technical errors or stack traces.
+
+## Module
+
+Error Handling / Navigation
+
+## Priority
+
+Medium
+
+## Preconditions
+
+* Application should be available.
+* User should have access to the application URL.
+* Error handling page should be configured.
+
+## Test Data
+
+* Invalid URL Route: /abc123
+* Expected Error Page: 404 Not Found Page
+
+---
+
+## Test Scenarios
+
+### TC-052-01: Verify application behavior for invalid URL route
+
+**Steps:**
+
+1. Open the application in a browser.
+2. Navigate to a non-existent route (e.g., **/abc123**).
+3. Observe the displayed page.
+
+**Expected Result:**
+
+* User-friendly **404 Not Found** page should be displayed.
+* Page should provide a clear message that the requested page does not exist.
+* Raw system errors should not be displayed.
+* Stack traces or technical error details should not be visible.
+* User should be able to navigate back to a valid page.
+
+**Status:** Not Executed
