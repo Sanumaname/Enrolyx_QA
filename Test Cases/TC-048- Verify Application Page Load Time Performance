@@ -1,0 +1,56 @@
+# TC-048- Verify Application Page Load Time Performance
+
+## Test Case Description
+
+Verify that the primary application pages load within the expected performance limit under standard broadband conditions.
+
+## Module
+
+Performance Testing / Application
+
+## Priority
+
+High
+
+## Preconditions
+
+* Application should be deployed and accessible.
+* User should have valid login credentials.
+* Standard broadband internet connection should be available.
+* Dashboard, Prospect List, and Pipeline pages should be accessible.
+* Application should be available.
+
+## Test Data
+
+* Pages to Test:
+
+  * Dashboard
+  * Prospect List
+  * Pipeline View
+* Expected Load Time: Within 3 seconds
+
+---
+
+## Test Scenarios
+
+### TC-048-01: Verify primary pages load within acceptable time
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to the **Dashboard** page.
+3. Record the page load time.
+4. Navigate to the **Prospect List** page.
+5. Record the page load time.
+6. Navigate to the **Pipeline View** page.
+7. Record the page load time.
+
+**Expected Result:**
+
+* Dashboard page should load within 3 seconds.
+* Prospect List page should load within 3 seconds.
+* Pipeline View page should load within 3 seconds.
+* All page content should be displayed correctly after loading.
+* No performance-related errors should occur.
+
+**Status:** Not Executed
