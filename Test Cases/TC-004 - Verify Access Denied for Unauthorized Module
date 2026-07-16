@@ -25,8 +25,6 @@ High
 * Password: Test@123
 * Restricted Module: Admin Module / Unauthorized Module
 
----
-
 ## Test Scenarios
 
 ### TC-004-01: Access restricted module without required permission
