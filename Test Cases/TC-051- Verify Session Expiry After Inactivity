@@ -1,0 +1,48 @@
+# TC-051- Verify Session Expiry After Inactivity
+
+## Test Case Description
+
+Verify that an active user session expires after the configured timeout period and that the user is redirected to the login page when attempting to perform an action after session expiry.
+
+## Module
+
+Authentication / Session Management
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should have valid login credentials.
+* User should be successfully logged into the application.
+* Session timeout configuration should be enabled.
+* Application should be available.
+
+## Test Data
+
+* User Account: Valid Registered User
+* Session Timeout: Configured timeout period
+* Action After Expiry: Any authenticated user action
+
+---
+
+## Test Scenarios
+
+### TC-051-01: Verify user session expires after inactivity period
+
+**Steps:**
+
+1. Login to the application using valid credentials.
+2. Keep the browser idle without performing any actions until the session timeout period is exceeded.
+3. Attempt to perform any authenticated action (e.g., navigate to another page or save data).
+
+**Expected Result:**
+
+* User session should expire after the configured timeout period.
+* User should be redirected to the login page.
+* User should be required to log in again to access the application.
+* The attempted action after session expiry should not be performed.
+* No unauthorized access should be allowed.
+
+**Status:** Not Executed
