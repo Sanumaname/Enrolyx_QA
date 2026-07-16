@@ -1,0 +1,56 @@
+# TC-014 - Verify Marketing Executive Can Create Prospect Manually
+
+## Test Case Description
+
+Verify that a Marketing Executive can successfully create a new prospect by entering valid prospect details and the system automatically assigns the prospect to a counselor with the correct source tag displayed on the profile.
+
+## Module
+
+CRM / Prospect Management
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application as a Marketing Executive.
+* Prospects module should be accessible.
+* Required metadata such as Program of Interest and Lead Source should be available.
+* Application should be available.
+
+## Test Data
+
+* First Name: John
+* Last Name: Smith
+* Mobile: 0771234567
+* Email: [john.smith@example.com](mailto:john.smith@example.com)
+* Program of Interest: Bachelor of Computer Science
+* Lead Source: Website
+
+
+## Test Scenarios
+
+### TC-014-01: Create a prospect manually as Marketing Executive
+
+**Steps:**
+
+1. Login to the application as a Marketing Executive.
+2. Navigate to **Prospects > Add Prospect**.
+3. Enter a valid first name.
+4. Enter a valid last name.
+5. Enter a valid mobile number.
+6. Enter a valid email address.
+7. Select the **Program of Interest**.
+8. Select the **Lead Source**.
+9. Click the **Save** button.
+
+**Expected Result:**
+
+* Prospect record should be created successfully.
+* Newly created prospect should appear in the prospect list.
+* Prospect should be automatically assigned to a counselor.
+* Lead source tag should be visible on the prospect profile.
+* Prospect details should be displayed correctly.
+
+**Status:** Not Executed
