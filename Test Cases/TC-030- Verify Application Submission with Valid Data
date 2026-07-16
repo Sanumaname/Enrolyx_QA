@@ -1,0 +1,55 @@
+# TC-030- Verify Application Submission with Valid Data
+
+## Test Case Description
+
+Verify that a user can successfully submit an application using a configured application form with valid details and the system creates an application record with a unique Application ID and Submitted status.
+
+## Module
+
+Applications / Application Management
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application.
+* Application form should exist for the selected program.
+* Prospect profile should already exist.
+* Program and Intake should be available.
+* Application module should be accessible.
+* Application should be available.
+
+## Test Data
+
+* Prospect: Existing Prospect Record
+* Program: Bachelor of Computer Science
+* Intake: January 2026 Intake
+* Application Status: Submitted
+
+---
+
+## Test Scenarios
+
+### TC-030-01: Submit application with valid data
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to the prospect profile.
+3. Click the **Start Application** button.
+4. Select the required program.
+5. Select the required intake.
+6. Fill all mandatory application fields with valid data.
+7. Submit the application.
+
+**Expected Result:**
+
+* Application should be created successfully.
+* A unique Application ID should be generated.
+* Application status should be displayed as **Submitted**.
+* Submitted application should be linked to the correct prospect, program, and intake.
+* Application details should be saved correctly.
+
+**Status:** Not Executed
