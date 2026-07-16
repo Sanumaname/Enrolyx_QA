@@ -1,0 +1,49 @@
+# TC-013- Verify Metadata Availability in CRM Dropdowns
+
+## Test Case Description
+
+Verify that created Campus, Program, and Intake metadata are available and displayed correctly in the relevant dropdown fields within the CRM Create Prospect form.
+
+## Module
+
+CRM / Prospect Management
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application.
+* Campus, Program, and Intake should already exist in the system.
+* Create Prospect form should be accessible.
+* Application should be available.
+
+## Test Data
+
+* Campus: Test Campus
+* Program: Bachelor of Computer Science
+* Intake: January 2026 Intake
+
+
+## Test Scenarios
+
+### TC-013-01: Verify Program and Intake availability in CRM dropdowns
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to the **Create Prospect** form.
+3. Open the **Program of Interest** dropdown.
+4. Verify the available program list.
+5. Open the **Intake** dropdown.
+6. Verify the available intake list.
+
+**Expected Result:**
+
+* All created programs should appear in the **Program of Interest** dropdown.
+* All created intakes should appear in the **Intake** dropdown.
+* Dropdown values should display correctly.
+* User should be able to select the required program and intake.
+
+**Status:** Not Executed
