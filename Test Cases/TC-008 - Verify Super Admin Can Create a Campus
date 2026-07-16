@@ -1,0 +1,46 @@
+# TC-008 - Verify Super Admin Can Create a Campus
+
+## Test Case Description
+
+Verify that a Super Admin user can successfully create a new campus and the created campus is displayed in the campus list and available in relevant campus dropdowns.
+
+## Module
+
+Academic Setup / Campus Management
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application as a Super Admin.
+* Academic Setup module should be accessible.
+* User should have permission to create campuses.
+* Application should be available.
+
+## Test Data
+
+* Campus Name: Test Campus
+
+
+## Test Scenarios
+
+### TC-008-01: Create a new campus as Super Admin
+
+**Steps:**
+
+1. Login to the application as a Super Admin.
+2. Navigate to **Settings > Academic Setup**.
+3. Click the **Add Campus** button.
+4. Enter a valid campus name.
+5. Click the **Save** button.
+
+**Expected Result:**
+
+* Campus should be created successfully.
+* Newly created campus should appear in the campus list.
+* Created campus should be available in all relevant campus dropdown fields.
+* A success message should be displayed after campus creation.
+
+**Status:** Not Executed
