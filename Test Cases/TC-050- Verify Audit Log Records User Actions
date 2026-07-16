@@ -1,0 +1,68 @@
+# TC-050- Verify Audit Log Records User Actions
+
+## Test Case Description
+
+Verify that the system records user activities in the audit log, including prospect creation, prospect stage changes, and application status updates with correct user, action, entity, and timestamp details.
+
+## Module
+
+Audit Log / System Administration
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application.
+* User should have permission to perform prospect and application updates.
+* Super Admin account should have access to the Audit Log.
+* Prospect and application records should be available.
+* Application should be available.
+
+## Test Data
+
+* User Role: Any Authorized User
+* Actions to Perform:
+
+  * Create Prospect
+  * Move Prospect to New Stage
+  * Update Application Status
+* Audit Log Details:
+
+  * User
+  * Action
+  * Entity
+  * Timestamp
+
+---
+
+## Test Scenarios
+
+### TC-050-01: Verify system records user actions in Audit Log
+
+**Steps:**
+
+1. Login to the application as an authorized user.
+2. Create a new prospect record.
+3. Move the prospect to a different pipeline stage.
+4. Update an application status.
+5. Login as a Super Admin.
+6. Navigate to **Audit Log**.
+7. Review the recorded activities.
+
+**Expected Result:**
+
+* All performed actions should appear in the Audit Log.
+* Audit log should display:
+
+  * Correct user who performed the action.
+  * Action performed.
+  * Related entity/record.
+  * Date and timestamp of the action.
+* Prospect creation activity should be recorded.
+* Prospect stage change activity should be recorded.
+* Application status update activity should be recorded.
+* Audit log data should be accurate and complete.
+
+**Status:** Not Executed
