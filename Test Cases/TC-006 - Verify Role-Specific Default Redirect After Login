@@ -1,0 +1,50 @@
+# TC-006: Verify Role-Specific Default Redirect After Login
+
+## Test Case Description
+
+Verify that users with different roles are redirected to their respective default dashboard views after successfully logging into the application.
+
+## Module
+
+Login / Role-Based Access Control
+
+## Priority
+
+High
+
+## Preconditions
+
+* Users with different roles should be created in the application.
+* User accounts should be active.
+* Login page should be accessible.
+* Application should be available.
+
+## Test Data
+
+* User 1 Role: Admissions Manager
+* User 2 Role: Enrollment Counselor
+
+---
+
+## Test Scenarios
+
+### TC-006-01: Verify default dashboard redirect for different user roles
+
+**Steps:**
+
+1. Open the application login page.
+2. Login using valid credentials for an **Admissions Manager** user.
+3. Verify the landing page after successful login.
+4. Logout from the application.
+5. Open a separate session or browser window.
+6. Login using valid credentials for an **Enrollment Counselor** user.
+7. Verify the landing page after successful login.
+
+**Expected Result:**
+
+* Admissions Manager should be redirected to the Admissions Manager default dashboard view.
+* Enrollment Counselor should be redirected to the Enrollment Counselor default dashboard view.
+* Each user role should see only the dashboard and features relevant to their assigned role.
+* No unauthorized dashboard access should be available.
+
+**Status:** Not Executed
