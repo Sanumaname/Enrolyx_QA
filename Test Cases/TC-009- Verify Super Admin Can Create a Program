@@ -1,0 +1,54 @@
+# TC-009- Verify Super Admin Can Create a Program
+
+## Test Case Description
+
+Verify that a Super Admin user can successfully create a new program by entering valid program details and the created program is displayed in the program list and available in relevant program dropdowns.
+
+## Module
+
+Academic Setup / Program Management
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application as a Super Admin.
+* Campus and Department should already exist in the system.
+* Academic Setup module should be accessible.
+* User should have permission to create programs.
+* Application should be available.
+
+## Test Data
+
+* Program Name: Bachelor of Computer Science
+* Department: Information Technology
+* Duration: 4 Years
+* Degree Type: Bachelor Degree
+
+
+## Test Scenarios
+
+### TC-009-01: Create a new program as Super Admin
+
+**Steps:**
+
+1. Login to the application as a Super Admin.
+2. Navigate to **Settings > Academic Setup > Programs**.
+3. Click the **Add Program** button.
+4. Enter a valid program name.
+5. Select the relevant department.
+6. Enter the program duration.
+7. Select the degree type.
+8. Click the **Save** button.
+
+**Expected Result:**
+
+* Program should be created successfully.
+* Newly created program should appear in the program list.
+* Created program should be available in all relevant program dropdown fields.
+* Program details should be displayed correctly.
+* A success message should be displayed after program creation.
+
+**Status:** Not Executed
