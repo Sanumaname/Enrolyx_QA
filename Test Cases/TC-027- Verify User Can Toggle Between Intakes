@@ -1,0 +1,50 @@
+# TC-027- Verify User Can Toggle Between Intakes
+
+## Test Case Description
+
+Verify that users can switch between different active intakes and the pipeline board updates to display the correct prospects for the selected intake.
+
+## Module
+
+CRM / Pipeline Management
+
+## Priority
+
+Medium
+
+## Preconditions
+
+* User should be logged into the application.
+* Multiple active intakes should exist in the system.
+* Prospects should be associated with different intakes.
+* Pipeline view should be accessible.
+* Application should be available.
+
+## Test Data
+
+* Intake A: January 2026 Intake
+* Intake B: July 2026 Intake
+
+---
+
+## Test Scenarios
+
+### TC-027-01: Toggle between active intakes
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to **Prospects > Pipeline View**.
+3. Select **Intake A** from the intake filter.
+4. Verify the displayed prospect cards.
+5. Change the filter to **Intake B**.
+6. Verify the displayed prospect cards.
+
+**Expected Result:**
+
+* Pipeline board should display only prospects associated with **Intake A** when selected.
+* After switching to **Intake B**, the board should refresh and display only prospects associated with **Intake B**.
+* No prospects from other intakes should be displayed.
+* Pipeline board should update successfully without errors.
+
+**Status:** Not Executed
