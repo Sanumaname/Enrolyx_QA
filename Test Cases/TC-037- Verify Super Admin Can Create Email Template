@@ -1,0 +1,53 @@
+# TC-037- Verify Super Admin Can Create Email Template
+
+## Test Case Description
+
+Verify that a Super Admin user can successfully create an email template with a subject, body content, and merge variable, and the created template is available in the template list.
+
+## Module
+
+Settings / Email Templates
+
+## Priority
+
+Medium
+
+## Preconditions
+
+* User should be logged into the application as a Super Admin.
+* Templates module should be accessible.
+* User should have permission to create templates.
+* Application should be available.
+
+## Test Data
+
+* Template Name: Application Status Update Email
+* Channel: Email
+* Subject: Application Status Update
+* Body: Hello {{first_name}}, your application status has been updated.
+
+---
+
+## Test Scenarios
+
+### TC-037-01: Create an email template as Super Admin
+
+**Steps:**
+
+1. Login to the application as a Super Admin.
+2. Navigate to **Settings > Templates**.
+3. Click the **New Template** button.
+4. Select the channel as **Email**.
+5. Enter a valid email subject.
+6. Enter email body content with merge variable **{{first_name}}**.
+7. Click the **Save** button.
+
+**Expected Result:**
+
+* Email template should be created successfully.
+* Template should appear in the template list.
+* Selected channel should be displayed as **Email**.
+* Subject and body content should be saved correctly.
+* Merge variable **{{first_name}}** should be stored correctly.
+
+**Status:** Not Executed
