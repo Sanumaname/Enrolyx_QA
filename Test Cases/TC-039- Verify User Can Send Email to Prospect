@@ -1,0 +1,60 @@
+# TC-039- Verify User Can Send Email to Prospect
+
+## Test Case Description
+
+Verify that a user can successfully send an email message to a prospect using an existing email template and that the communication is recorded in the prospect timeline with relevant details.
+
+## Module
+
+Communication / Prospect Management
+
+## Priority
+
+High
+
+## Preconditions
+
+* User should be logged into the application.
+* Email template should already exist.
+* Prospect profile should exist.
+* Prospect should have a valid email address.
+* Email communication service should be configured and active.
+* Application should be available.
+
+## Test Data
+
+* Communication Channel: Email
+* Email Template: Application Status Update Email
+* Prospect Email: [john.smith@example.com](mailto:john.smith@example.com)
+* Merge Variable: {{first_name}}
+
+---
+
+## Test Scenarios
+
+### TC-039-01: Send email to prospect using email template
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to the prospect profile.
+3. Click the **Send Message** button.
+4. Select communication channel as **Email**.
+5. Select an existing email template.
+6. Preview the merged email content.
+7. Confirm and send the email.
+
+**Expected Result:**
+
+* Email should be sent successfully to the prospect.
+* Merge variables should be replaced with the correct prospect information.
+* Communication should be logged in the prospect timeline.
+* Timeline entry should display:
+
+  * Communication channel as **Email**
+  * Timestamp
+  * Template name
+  * Status as **Sent**
+* No error should occur during email sending.
+
+**Status:** Not Executed
