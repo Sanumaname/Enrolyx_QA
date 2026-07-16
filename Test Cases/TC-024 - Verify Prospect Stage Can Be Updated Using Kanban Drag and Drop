@@ -1,0 +1,51 @@
+# TC-024 - Verify Prospect Stage Can Be Updated Using Kanban Drag and Drop
+
+## Test Case Description
+
+Verify that a user can drag and drop a prospect card from one pipeline stage to another on the Kanban board, and the stage change is updated and recorded in the prospect timeline.
+
+## Module
+
+CRM / Pipeline Management
+
+## Priority
+
+Medium
+
+## Preconditions
+
+* User should be logged into the application.
+* Kanban board should be accessible.
+* At least one prospect should exist in the **Enquiry** stage.
+* User should have permission to update prospect stages.
+* Application should be available.
+
+## Test Data
+
+* Current Stage: Enquiry
+* New Stage: Contacted
+* Prospect: Existing Prospect Record
+
+---
+
+## Test Scenarios
+
+### TC-024-01: Move a prospect from Enquiry to Contacted using drag and drop
+
+**Steps:**
+
+1. Login to the application.
+2. Navigate to **Prospects > Pipeline View**.
+3. Locate a prospect card in the **Enquiry** column.
+4. Drag and drop the prospect card into the **Contacted** column.
+5. Open the prospect profile and review the interaction timeline.
+
+**Expected Result:**
+
+* Prospect card should be moved successfully to the **Contacted** stage.
+* Prospect stage should be updated in the system.
+* Stage change should be recorded in the prospect timeline.
+* Timeline should display the stage change with the correct timestamp and the user who performed the action.
+* No errors should occur during the stage update.
+
+**Status:** Not Executed
