@@ -55,4 +55,4 @@ High
 * Updated stage order should be reflected in the Kanban board.
 * No error should occur while saving the configuration.
 
-**Status:** Not Executed
+**Status:** Pass
