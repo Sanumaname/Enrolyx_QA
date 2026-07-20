@@ -44,4 +44,4 @@ High
 * Restricted module data or functionality should not be visible.
 * User should remain on the current page or be redirected to an authorized page.
 
-**Status:** Not Executed
+**Status:** Pass
