@@ -43,4 +43,4 @@ High
 * Created campus should be available in all relevant campus dropdown fields.
 * A success message should be displayed after campus creation.
 
-**Status:** Not Executed
+**Status:** Pass
