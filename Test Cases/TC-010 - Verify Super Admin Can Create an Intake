@@ -55,4 +55,4 @@ High
 * Intake details should be displayed correctly.
 * A success message should be displayed after intake creation.
 
-**Status:** Not Executed
+**Status:** Pass
