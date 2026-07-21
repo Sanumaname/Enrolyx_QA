@@ -47,4 +47,4 @@ High
 * User should be prompted to enter the required mobile number.
 * No incomplete prospect record should be saved in the system.
 
-**Status:** Not Executed
+**Status:** Pass
