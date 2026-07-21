@@ -51,4 +51,4 @@ Medium
 * No prospect should appear in an incorrect stage.
 * Kanban board should load without errors.
 
-**Status:** Not Executed
+**Status:** Pass
