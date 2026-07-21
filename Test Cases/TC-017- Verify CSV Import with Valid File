@@ -52,4 +52,4 @@ High
 * Imported prospect records should appear in the CRM prospect list.
 * Imported prospect details should match the CSV file data.
 
-**Status:** Not Executed
+**Status:** Pass
