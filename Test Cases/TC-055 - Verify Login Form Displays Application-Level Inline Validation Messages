@@ -1,0 +1,50 @@
+# TC-055 - Verify Login Form Displays Application-Level Inline Validation Messages
+
+## Test Case Description
+
+Verify that the login page displays custom inline validation messages for empty required fields instead of showing the browser's default HTML5 validation popup.
+
+## Module
+
+Module 1 — Authentication & Role-Based Access Control
+
+## Priority
+
+Medium
+
+## Preconditions
+
+* Application should be accessible.
+* Login page should be available.
+* User should not enter any values in the required fields.
+
+## Test Data
+
+* Username/Email: Empty
+* Password: Empty
+
+## Test Scenarios
+
+### TC-003-01: Verify validation message display when login fields are empty
+
+**Steps:**
+
+1. Open the application login page.
+2. Leave the Username/Email field empty.
+3. Leave the Password field empty.
+4. Click the Sign in button.
+5. Observe the validation messages displayed.
+
+**Expected Result:**
+
+* The application should display custom inline validation messages near the relevant input fields.
+* Validation messages should clearly indicate which fields require input.
+* Browser default HTML5 validation popup should not be displayed.
+
+**Status:** Fail
+
+**Notes:**
+
+* Defect ID: DEF-003
+* Actual Result: Browser's native HTML5 validation popup is displayed instead of application-level inline validation messages.
+* Severity: Medium.
