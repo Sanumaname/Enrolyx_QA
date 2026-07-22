@@ -1,0 +1,47 @@
+# TC-001 - Verify Application Favicon Display
+
+## Test Case Description
+
+Verify that the application favicon is correctly displayed in the browser tab to ensure proper branding and easy identification of the application.
+
+## Module
+
+UI / Branding
+
+## Priority
+
+Low
+
+## Preconditions
+
+* Application URL should be accessible.
+* User should have access to the application.
+* A supported web browser (Chrome, Edge, Firefox, Safari) should be installed.
+
+## Test Data
+
+* Application URL: `<Application URL>`
+
+## Test Scenarios
+
+### TC-001-01: Verify favicon is displayed on application load
+
+**Steps:**
+
+1. Open the application URL in a supported web browser.
+2. Wait until the page is fully loaded.
+3. Observe the browser tab.
+
+**Expected Result:**
+
+* The application favicon should be displayed in the browser tab.
+* The favicon should match the application's branding/logo.
+* No default browser icon or blank icon should be displayed.
+
+**Status:** Fail
+
+**Notes:**
+
+* Defect ID: DEF-001
+* Actual Result: No favicon is displayed in the browser tab. The browser shows the default blank icon instead.
+* Verify favicon visibility after page refresh and when navigating between application pages.
